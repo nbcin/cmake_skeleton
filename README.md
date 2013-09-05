@@ -4,8 +4,23 @@ cmake skeleton
 A skeleton for a cmake project
 
 
+Build
+=====
+
+`mkdir build`
+`cd build`
+
+and then:
+* Xcode (Mac OS X): `cmake -GXcode ..`
+* Unix Makefiles: `cmake ..`
+* CodeBlocks (GNU/Linux): `cmake -G"CodeBlocks - Unix Makefiles"`
+
+others:
+http://www.cmake.org/Wiki/CMake_Generator_Specific_Information
+
+
 License
--------
+=======
 
 The MIT License (MIT)
 
