@@ -17,7 +17,21 @@ add_definitions(-Wmissing-declarations)
 
 # Check external libraries
 find_package(PkgConfig)
-#pkg_check_modules(HAVE_EINA REQUIRED eina)
+pkg_check_modules(EINA REQUIRED eina)
+
+set(LIB_INCLUDE_DIRS
+   ${EINA_INCLUDE_DIRS}
+   ${Hello_SOURCE_DIR}/lib
+   )
+
+set(LIB_LINK_DIRS
+   ${EINA_LIBRARY_DIRS}
+   ${Hello_BINARY_DIR}/lib
+   )
+
+set(LIB_LINK_LIBS
+   ${EINA_LIBRARIES}
+   )
 
 # Is it 64bits?
 if (CMAKE_SIZEOF_VOID_P EQUAL 4)

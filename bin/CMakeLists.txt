@@ -1,14 +1,15 @@
 if (WITH_BINARY)
 
-   include_directories(${Hello_SOURCE_DIR}/lib)
-   link_directories(${Hello_BINARY_DIR}/lib)
+   include_directories(${LIB_INCLUDE_DIRS})
+   link_directories(${LIB_LINK_DIRS})
 
    set(BINSRC
       main.c)
 
    add_executable(binary ${BINSRC})
 
-   target_link_libraries(binary hello)
+   target_link_libraries(binary
+      hello ${LIB_LINK_LIBS})
 
    install(TARGETS binary
       RUNTIME DESTINATION bin)

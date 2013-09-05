@@ -1,7 +1,4 @@
 #include "hello.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 static void
 _result_generate(void)
@@ -16,6 +13,7 @@ main(int argc, char **argv)
 {
    int i;
 
+   hello_init();
    srand(time(NULL));
 
    printf("This is %s\n", argv[0]);
@@ -24,6 +22,7 @@ main(int argc, char **argv)
      _result_generate();
 
    printf("End of program\n");
+   hello_shutdown();
 
    return EXIT_SUCCESS;
 }
