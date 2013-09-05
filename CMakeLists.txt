@@ -15,6 +15,10 @@ add_definitions(-g)
 add_definitions(-Wshadow)
 add_definitions(-Wmissing-declarations)
 
+# Check external libraries
+find_package(PkgConfig)
+#pkg_check_modules(HAVE_EINA REQUIRED eina)
+
 # Is it 64bits?
 if (CMAKE_SIZEOF_VOID_P EQUAL 4)
    set(64_BIT_PLATFORM 0)
