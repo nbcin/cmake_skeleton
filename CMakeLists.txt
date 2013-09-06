@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
-project(Hello C)
+project(hello C)
 
-set(Hello_VERSION_MAJOR 0)
-set(Hello_VERSION_MINOR 1)
+set(PROJECT_DESCRIPTION "A wonderful description")
+set(PROJECT_URL "http://jeanguyomarch.github.io/cmake_skeleton/")
+
+set(hello_VERSION_MAJOR 0)
+set(hello_VERSION_MINOR 1)
 
 set(CMAKE_COLOR_MAKEFILE ON)
 set(CMAKE_VERBOSE_MAKEFILE OFF)
@@ -21,12 +24,12 @@ pkg_check_modules(EINA REQUIRED eina)
 
 set(LIB_INCLUDE_DIRS
    ${EINA_INCLUDE_DIRS}
-   ${Hello_SOURCE_DIR}/lib
+   ${hello_SOURCE_DIR}/lib
    )
 
 set(LIB_LINK_DIRS
    ${EINA_LIBRARY_DIRS}
-   ${Hello_BINARY_DIR}/lib
+   ${hello_BINARY_DIR}/lib
    )
 
 set(LIB_LINK_LIBS
@@ -48,3 +51,4 @@ add_subdirectory(lib)
 add_subdirectory(examples)
 add_subdirectory(bin)
 add_subdirectory(doc)
+
