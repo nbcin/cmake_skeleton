@@ -7,16 +7,10 @@ A skeleton for a cmake project
 Build
 =====
 
-`mkdir build`
-`cd build`
+* Unix Makefiles: ./bootstrap.sh
+* Xcode project: ./bootstrap.sh -x
 
-and then:
-* Xcode (Mac OS X): `cmake -GXcode ..`
-* Unix Makefiles: `cmake ..`
-* CodeBlocks (GNU/Linux): `cmake -G"CodeBlocks - Unix Makefiles"`
-
-others:
-http://www.cmake.org/Wiki/CMake_Generator_Specific_Information
+To add options to `bootstrap.sh`: http://www.cmake.org/Wiki/CMake_Generator_Specific_Information
 
 
 License
