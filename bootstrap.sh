@@ -13,6 +13,7 @@ if [ "x$1" == "x--doc" ]; then
    cmake ..
    make doc
    cp -R doc/html $tmp
+   cd ..
    git checkout gh-pages
    rm -Rf doc
    cp -R $tmp doc
