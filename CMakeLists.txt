@@ -51,4 +51,5 @@ add_subdirectory(lib)
 add_subdirectory(examples)
 add_subdirectory(bin)
 add_subdirectory(doc)
+add_subdirectory(edje)
 
