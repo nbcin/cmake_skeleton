@@ -1,0 +1,38 @@
+collections {
+
+   externals {
+      external: "elm";
+   }
+
+   group { name: "main";
+      parts {
+         part { name: "main/bg";
+            type: RECT;
+            description { state: "default" 0.0;
+               rel1.relative: 0.0 0.0;
+               rel2.relative: 1.0 1.0;
+               color: 255 255 0 255;
+            }
+         }
+
+         part { name: "main/bt";
+            type: EXTERNAL;
+            source: "elm/button";
+            description {
+               rel1 {
+                  to: "main/bg";
+                  relative: 0.45 0.45;
+               }
+               rel2 {
+                  to: "main/bg";
+                  relative: 0.55 0.55;
+               }
+               params {
+                  string: "label" "Hello";
+               }
+            }
+         }
+      }
+   }
+
+}
