@@ -1,1 +1,0 @@
-/usr/bin/cc   -I/opt/local/include  -Wl,-search_paths_first -Wl,-headerpad_max_install_names   -L/opt/local/lib CMakeFiles/binary.dir/main.c.o  -o binary  -L/Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/lib  ../lib/libhello.dylib -leina -lpthread 

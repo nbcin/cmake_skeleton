@@ -1,1 +1,0 @@
-/usr/bin/cc   -I/opt/local/include  -dynamiclib -Wl,-headerpad_max_install_names   -L/opt/local/lib -o libhello.dylib -install_name /Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/lib/libhello.dylib CMakeFiles/hello.dir/hello.c.o -leina -lpthread 

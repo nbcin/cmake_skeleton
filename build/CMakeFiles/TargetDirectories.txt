@@ -1,4 +1,0 @@
-/Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/bin/CMakeFiles/binary.dir
-/Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/doc/CMakeFiles/doc.dir
-/Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/lib/CMakeFiles/hello.dir
-/Users/Jean/Developer/Applications/_SKELETONS/cmake_skeleton/build/examples/CMakeFiles/test.dir
