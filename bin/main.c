@@ -9,7 +9,7 @@ _result_generate(void)
 }
 
 int
-main(int argc, char **argv)
+main(int argc EINA_UNUSED, char **argv)
 {
    int i;
 
