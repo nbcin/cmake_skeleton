@@ -17,10 +17,10 @@ if [ "x$1" == "x--doc" ]; then
    git checkout gh-pages
    rm -Rf doc
    cp -R $tmp doc
-  # git add .
-  # git commit -am "Automatic documentation upload"
-  # git push origin gh-pages
-  # git checkout master
+   git add .
+   git commit -am "Automatic documentation upload"
+   git push origin gh-pages
+   git checkout master
    exit 0
 fi
 
