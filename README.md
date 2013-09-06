@@ -13,6 +13,10 @@ Build
 To add options to `bootstrap.sh`: http://www.cmake.org/Wiki/CMake_Generator_Specific_Information
 
 
+* To build the documentation: `make doc`
+* To build the Edje themes: `make edje`
+
+
 License
 =======
 
