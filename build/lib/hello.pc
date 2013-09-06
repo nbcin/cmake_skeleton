@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+
+Name: hello
+Description: A wonderful description
+Version: 0.1
+URL: http://jeanguyomarch.github.io/cmake_skeleton/
+Libs: -L${libdir} -lhello
+Cflags: -I${includedir}
