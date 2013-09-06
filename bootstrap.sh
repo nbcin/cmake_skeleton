@@ -12,9 +12,14 @@ if [ "x$1" == "x--doc" ]; then
    tmp="/tmp/tmp2LqYfht9Ee"
    cmake ..
    make doc
-   mkdir $tmp
-   cp -R doc/html $tmp/
-
+   cp -R doc/html $tmp
+   git checkout gh-pages
+   rm -Rf doc
+   cp -R $tmp doc
+   git add .
+   git commit -am "Automatic documentation upload"
+   git push origin gh-pages
+   git checkout master
    exit 0
 fi
 
