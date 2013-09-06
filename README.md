@@ -7,8 +7,8 @@ A skeleton for a cmake project
 Build
 =====
 
-* Unix Makefiles: ./bootstrap.sh
-* Xcode project: ./bootstrap.sh -x
+* Unix Makefiles: `./bootstrap.sh`
+* Xcode project: `./bootstrap.sh -x`
 
 To add options to `bootstrap.sh`: http://www.cmake.org/Wiki/CMake_Generator_Specific_Information
 
