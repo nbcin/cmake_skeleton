@@ -33,7 +33,7 @@ Push documentation online
 * Create a github page for your project: https://help.github.com/articles/creating-pages-with-the-automatic-generator
 * Do the six steps, and in your git(hub) repository, enter: `git fetch origin`.
 * Go to your master branch (`git checkout master`) and commit everything.
-* Run `./bootstrap --doc`
+* Run `./bootstrap.sh --doc`
 
 License
 =======
