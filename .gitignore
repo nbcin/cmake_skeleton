@@ -23,6 +23,9 @@ build/
 *.out
 *.app
 
+# Generated .desktop
+*.desktop
+
 # Cmake
 CMakeCache.txt
 CMakeFiles

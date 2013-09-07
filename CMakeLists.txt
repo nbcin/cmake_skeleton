@@ -52,4 +52,5 @@ add_subdirectory(examples)
 add_subdirectory(bin)
 add_subdirectory(doc)
 add_subdirectory(edje)
+add_subdirectory(data)
 

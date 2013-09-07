@@ -17,5 +17,7 @@ if(WITH_BINARY)
       COMMENT "Compiling Edje themes..."
       )
 
+   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/default.edj DESTINATION share/hello)
+
 endif(WITH_BINARY)
 
