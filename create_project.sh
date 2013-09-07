@@ -28,10 +28,11 @@ fi
 
 mkdir -p ../$prj
 cp -R * ../$prj/
+mv .gitignore ../$prj/gitignore
+
 cd ../$prj
 
-#rm -Rf .git
-#mv .gitignore gitignore
+rm -Rf build
 
 dirs=". bin edje doc examples lib"
 echo "The warnings 'Can't do inplace edit: ...' should be ignored!"
@@ -45,3 +46,8 @@ mv lib/hello.c lib/${prj}.c
 mv lib/hello.pc.in lib/${prj}.pc.in
 mv data/hello.desktop.in data/${prj}.desktop.in
 
+echo
+echo "Your project [$prj] is located at path:"
+echo "     `pwd`"
+echo
+echo "If you are using git, you can rename gitignore to .gitignore. Delete it if you don't need it."
