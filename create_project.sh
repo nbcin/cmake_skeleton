@@ -28,7 +28,7 @@ fi
 
 mkdir -p ../$prj
 cp -R * ../$prj/
-mv .gitignore ../$prj/gitignore
+cp .gitignore ../$prj/gitignore
 
 cd ../$prj
 
