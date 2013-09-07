@@ -24,6 +24,16 @@ To add options to `bootstrap.sh`: http://www.cmake.org/Wiki/CMake_Generator_Spec
 * To build the documentation: `make doc`
 * To build the Edje themes: `make edje`
 
+Push documentation online
+=========================
+
+**Only if you are using git with github.**
+
+
+* Create a github page for your project: https://help.github.com/articles/creating-pages-with-the-automatic-generator
+* Do the six steps, and in your git(hub) repository, enter: `git fetch origin`.
+* Go to your master branch (`git checkout master`) and commit everything.
+* Run `./bootstrap --doc`
 
 License
 =======
