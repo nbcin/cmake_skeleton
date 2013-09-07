@@ -34,6 +34,7 @@ cd ../$prj
 #mv .gitignore gitignore
 
 dirs=". bin edje doc examples lib"
+echo "The warnings 'Can't do inplace edit: ...' should be ignored!"
 for d in $dirs; do
    perl -p -i -e "s/hello/$prj/g" $d/*
    perl -p -i -e "s/HELLO/$PRJ/g" $d/*
