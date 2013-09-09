@@ -17,13 +17,13 @@
  * Initialize libhello.
  * @return How many times the library have been initialized.
  */
-int hello_init(void);
+EAPI int hello_init(void);
 
 /**
  * Shutdown libhello.
  * @return How many times the library have been initialized and not released.
  */
-int hello_shutdown(void);
+EAPI int hello_shutdown(void);
 
 /**
  * @}
@@ -39,7 +39,7 @@ int hello_shutdown(void);
  * @param b Second integer
  * @return The sum of @e a and @e b
  */
-int hello_plus(int a, int b);
+EAPI int hello_plus(int a, int b);
 
 /**
  * Makes the difference of two integers.
@@ -47,7 +47,7 @@ int hello_plus(int a, int b);
  * @param b Second integer
  * @return The difference of @e a and @e b
  */
-int hello_minus(int a, int b);
+EAPI int hello_minus(int a, int b);
 
 
 /** @} */

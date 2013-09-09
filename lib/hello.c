@@ -1,8 +1,9 @@
 #include "hello.h"
+#include "hello_private.h"
 
 static int _init_count = 0;
 
-int
+EAPI int
 hello_init(void)
 {
    if (_init_count == 0)
@@ -17,7 +18,7 @@ eina_init_fail:
    return 0;
 }
 
-int
+EAPI int
 hello_shutdown(void)
 {
    if (_init_count == 1)
@@ -28,13 +29,13 @@ hello_shutdown(void)
    return --_init_count;
 }
 
-int
+EAPI int
 hello_plus(int a, int b)
 {
    return a + b;
 }
 
-int
+EAPI int
 hello_minus(int a, int b)
 {
    return a - b;
