@@ -17,6 +17,7 @@ if [ "x$1" == "x--doc" ]; then
    git checkout gh-pages
    rm -Rf doc
    cp -R $tmp doc
+   touch .nojekyll
    git add .
    git commit -am "Automatic documentation upload"
    git push origin gh-pages
