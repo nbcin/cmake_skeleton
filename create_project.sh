@@ -52,3 +52,4 @@ echo "Your project [$prj] is located at path:"
 echo "     `pwd`"
 echo
 echo "If you are using git, you can rename gitignore to .gitignore. Delete it if you don't need it."
+echo
