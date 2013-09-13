@@ -1,4 +1,9 @@
 #!/bin/sh -e
+#
+# If you change this file, please make a pull request to improve the
+# original file:
+# https://github.com/jeanguyomarch/cmake_skeleton
+#
 
 
 if [ -d build ]; then
