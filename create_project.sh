@@ -34,7 +34,7 @@ cd ../$prj
 
 rm -Rf build
 
-dirs=". bin edje doc examples lib"
+dirs=". bin edje doc examples lib data"
 echo "The warnings 'Can't do inplace edit: ...' should be ignored!"
 for d in $dirs; do
    perl -p -i -e "s/hello/$prj/g" $d/*
