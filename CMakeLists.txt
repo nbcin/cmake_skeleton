@@ -47,6 +47,7 @@ endif()
 option(WITH_EXAMPLES "Include examples" ON)
 option(WITH_BINARY "Include the binary program" ON)
 
+# Cmake tree
 add_subdirectory(lib)
 add_subdirectory(examples)
 add_subdirectory(bin)
