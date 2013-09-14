@@ -6,14 +6,21 @@
 #
 
 
-if [ -d build ]; then
-   rm -Rf build;
-fi
+if [ "x$1" == "x--clean" ]; then
 
-mkdir -p build
-cd build
+   # ==============================
+   # Getopt: ./bootstrap.sh --clean
+   # ==============================
 
-if [ "x$1" == "x--doc" ]; then
+   rm -Rf build
+   exit 0
+
+elif [ "x$1" == "x--doc" ]; then
+
+   # ============================
+   # Getopt: ./bootstrap.sh --doc
+   # ============================
+
    tmp="/tmp/tmp2LqYfht9Ee"
    cmake ..
    make doc
@@ -28,13 +35,43 @@ if [ "x$1" == "x--doc" ]; then
    git push origin gh-pages
    git checkout master
    exit 0
+
 fi
 
+# No special options: re-create the build/ directory
+if [ -d build ]; then
+   rm -Rf build;
+fi
+mkdir -p build
+cd build
+
+
+# ==================
+# Generation options
+# ==================
+
 if [ "x$1" == "x" ]; then
+
+   # ===========================================
+   # Getopt: ./bootstrap.sh : Default generation
+   # ===========================================
+
    cmake ..
+
 elif [ "x$1" == "x-x" ]; then
+
+   # ============================================
+   # Getopt: ./bootstrap.sh -x : Xcode generation
+   # ============================================
+
    cmake -GXcode ..
+
 else
+
+   # ==================================================
+   # Getopt: ./bootstrap.sh <junk> : Default generation
+   # ==================================================
+
    echo "*** Unkown parameter [$1] using default cmake" &>2
    cmake ..
 fi

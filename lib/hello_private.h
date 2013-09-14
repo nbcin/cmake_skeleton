@@ -2,8 +2,11 @@
 #define _HELLO_PRIVATE_H_
 
 /**
+ * @file hello_private.h
+ * @brief Libetalk private header
+ * @author Jean Guyomarc'h
  * @defgroup private Private API
- * @brief These are some private symbols
+ * @brief Private API for the library developers only.
  * @{
  */
 
