@@ -3,7 +3,7 @@
 
 /**
  * @file hello_private.h
- * @brief Libetalk private header
+ * @brief Libhello private header
  * @author Jean Guyomarc'h
  * @defgroup private Private API
  * @brief Private API for the library developers only.
