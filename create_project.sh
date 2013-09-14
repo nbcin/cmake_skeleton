@@ -45,6 +45,7 @@ mv lib/hello.h lib/${prj}.h
 mv lib/hello_private.h lib/${prj}_private.h
 mv lib/hello.c lib/${prj}.c
 mv lib/hello.pc.in lib/${prj}.pc.in
+mv lib/hello_config.h.in lib/${prj}_config.h.in
 mv data/hello.desktop.in data/${prj}.desktop.in
 
 echo

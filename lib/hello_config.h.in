@@ -1,0 +1,7 @@
+#ifndef _HELLO_CONFIG_H_
+#define _HELLO_CONFIG_H_
+
+#define PACKAGE "@CMAKE_PROJECT_NAME@"
+
+#endif /* _HELLO_CONFIG_H_ */
+

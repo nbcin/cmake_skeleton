@@ -3,7 +3,12 @@ set(BUILD_SHARED_LIBS true)
 set(LIBSRC
    hello.c)
 
-include_directories(${EINA_INCLUDE_DIRS})
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/hello_config.h.in
+   ${CMAKE_CURRENT_BINARY_DIR}/hello_config.h)
+
+include_directories(${EINA_INCLUDE_DIRS}
+   ${CMAKE_CURRENT_BINARY_DIR})
+
 link_directories(${EINA_LIBRARY_DIRS})
 
 add_library(hello SHARED ${LIBSRC})

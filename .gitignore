@@ -59,3 +59,9 @@ DerivedData
 
 # Doxygen (source is Doxyfile.in)
 Doxyfile
+
+# config.h (source is hello_config.h.in)
+hello_config.h
+
+# pkg-config file
+hello.pc

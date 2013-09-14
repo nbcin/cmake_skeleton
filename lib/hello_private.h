@@ -10,6 +10,8 @@
  * @{
  */
 
+#include "hello_config.h"
+
 #ifdef EAPI
 # undef EAPI
 #endif
