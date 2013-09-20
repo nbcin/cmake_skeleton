@@ -6,12 +6,21 @@
 #
 
 
+# No special options: re-create the build/ directory
+if [ -d build ]; then
+   rm -Rf build;
+fi
+mkdir -p build
+cd build
+
+
 if [ "x$1" == "x--clean" ]; then
 
    # ==============================
    # Getopt: ./bootstrap.sh --clean
    # ==============================
 
+   cd ..
    rm -Rf build
    exit 0
 
@@ -37,13 +46,6 @@ elif [ "x$1" == "x--doc" ]; then
    exit 0
 
 fi
-
-# No special options: re-create the build/ directory
-if [ -d build ]; then
-   rm -Rf build;
-fi
-mkdir -p build
-cd build
 
 
 # ==================
